@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/react-robofriends-redux/static/css/main.17cfbac0.chunk.css",
-    "main.js": "/react-robofriends-redux/static/js/main.eb975d9b.chunk.js",
-    "main.js.map": "/react-robofriends-redux/static/js/main.eb975d9b.chunk.js.map",
+    "main.js": "/react-robofriends-redux/static/js/main.890f09eb.chunk.js",
+    "main.js.map": "/react-robofriends-redux/static/js/main.890f09eb.chunk.js.map",
     "runtime-main.js": "/react-robofriends-redux/static/js/runtime-main.fa872842.js",
     "runtime-main.js.map": "/react-robofriends-redux/static/js/runtime-main.fa872842.js.map",
     "static/css/2.3b2cfc2e.chunk.css": "/react-robofriends-redux/static/css/2.3b2cfc2e.chunk.css",
-    "static/js/2.a6f0891f.chunk.js": "/react-robofriends-redux/static/js/2.a6f0891f.chunk.js",
-    "static/js/2.a6f0891f.chunk.js.map": "/react-robofriends-redux/static/js/2.a6f0891f.chunk.js.map",
+    "static/js/2.af1f464e.chunk.js": "/react-robofriends-redux/static/js/2.af1f464e.chunk.js",
+    "static/js/2.af1f464e.chunk.js.map": "/react-robofriends-redux/static/js/2.af1f464e.chunk.js.map",
     "index.html": "/react-robofriends-redux/index.html",
-    "precache-manifest.389465c76ea285357e62543630f69a29.js": "/react-robofriends-redux/precache-manifest.389465c76ea285357e62543630f69a29.js",
+    "precache-manifest.aee8fd90a52c24f9d3b42d233fc00562.js": "/react-robofriends-redux/precache-manifest.aee8fd90a52c24f9d3b42d233fc00562.js",
     "service-worker.js": "/react-robofriends-redux/service-worker.js",
     "static/css/2.3b2cfc2e.chunk.css.map": "/react-robofriends-redux/static/css/2.3b2cfc2e.chunk.css.map",
     "static/css/main.17cfbac0.chunk.css.map": "/react-robofriends-redux/static/css/main.17cfbac0.chunk.css.map",
-    "static/js/2.a6f0891f.chunk.js.LICENSE.txt": "/react-robofriends-redux/static/js/2.a6f0891f.chunk.js.LICENSE.txt",
+    "static/js/2.af1f464e.chunk.js.LICENSE.txt": "/react-robofriends-redux/static/js/2.af1f464e.chunk.js.LICENSE.txt",
     "static/media/App.css": "/react-robofriends-redux/static/media/SEGA.12a3db8b.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.fa872842.js",
     "static/css/2.3b2cfc2e.chunk.css",
-    "static/js/2.a6f0891f.chunk.js",
+    "static/js/2.af1f464e.chunk.js",
     "static/css/main.17cfbac0.chunk.css",
-    "static/js/main.eb975d9b.chunk.js"
+    "static/js/main.890f09eb.chunk.js"
   ]
 }
