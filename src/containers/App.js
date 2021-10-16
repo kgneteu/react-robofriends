@@ -4,18 +4,9 @@ import {requestRobots, setSearchField} from '../actions';
 
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
-import ErrorBoundry from '../components/ErrorBoundry';
+import ErrorBoundary from '../components/ErrorBoundry';
 
 import './App.css';
-
-// parameter state comes from index.js provider store state(rootReducers)
-// const mapStateToProps = (state) => {
-//     return {
-//         searchField: state.searchRobots.searchField,
-//         robots: state.requestRobots.robots,
-//         isPending: state.requestRobots.isPending
-//     }
-// }
 
 
 function App() {
@@ -33,15 +24,24 @@ function App() {
     })
 
     return (
-        <div className='tc'>
-            <h1 className='f1'>RoboFriends</h1>
-            <SearchBox searchChange={(event) => dispatch(setSearchField(event.target.value))}/>
-            {isPending ? <h1>Loading</h1> :
-                <ErrorBoundry>
-                    <CardList robots={filteredRobots}/>
-                </ErrorBoundry>
-            }
-        </div>
+        <>
+            <header style={{position: 'fixed', top: 0, textAlign: 'center', width: '100%', height: '200px', zIndex: '100'}}>
+                <h1 className='f1 center'>RoboFriends</h1>
+                <SearchBox className={'ml-auto'}
+                           searchChange={(event) => dispatch(setSearchField(event.target.value))}/>
+            </header>
+            <div className='tc'>
+                <div style={{marginTop: '200px'}}>
+                    {isPending ? <h1>Loading</h1> :
+
+                        <ErrorBoundary>
+                            <CardList robots={filteredRobots}/>
+                        </ErrorBoundary>
+
+                    }
+                </div>
+            </div>
+        </>
     );
 
 }
