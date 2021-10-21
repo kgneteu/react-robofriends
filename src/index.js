@@ -4,7 +4,7 @@ import {applyMiddleware, combineReducers, createStore} from 'redux';
 import {Provider} from 'react-redux';
 import thunkMiddleware from 'redux-thunk';
 import {createLogger} from 'redux-logger';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import * as serviceWorker from './serviceWorker';
 import 'tachyons';
 
 import App from './containers/App';
@@ -39,4 +39,4 @@ ReactDOM.render(
     </Provider>,
     document.getElementById('root')
 );
-serviceWorkerRegistration.register();
+serviceWorker.unregister();
