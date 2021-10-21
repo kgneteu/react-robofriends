@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/react-robofriends-redux/static/css/main.a6a6a69e.chunk.css",
-    "main.js": "/react-robofriends-redux/static/js/main.7d4302a7.chunk.js",
-    "main.js.map": "/react-robofriends-redux/static/js/main.7d4302a7.chunk.js.map",
-    "runtime-main.js": "/react-robofriends-redux/static/js/runtime-main.fa872842.js",
-    "runtime-main.js.map": "/react-robofriends-redux/static/js/runtime-main.fa872842.js.map",
-    "static/css/2.3b2cfc2e.chunk.css": "/react-robofriends-redux/static/css/2.3b2cfc2e.chunk.css",
-    "static/js/2.d9c99294.chunk.js": "/react-robofriends-redux/static/js/2.d9c99294.chunk.js",
-    "static/js/2.d9c99294.chunk.js.map": "/react-robofriends-redux/static/js/2.d9c99294.chunk.js.map",
+    "main.css": "/react-robofriends-redux/static/css/main.3356fdd3.chunk.css",
+    "main.js": "/react-robofriends-redux/static/js/main.2c7c8ad3.chunk.js",
+    "main.js.map": "/react-robofriends-redux/static/js/main.2c7c8ad3.chunk.js.map",
+    "runtime-main.js": "/react-robofriends-redux/static/js/runtime-main.97d3ecf4.js",
+    "runtime-main.js.map": "/react-robofriends-redux/static/js/runtime-main.97d3ecf4.js.map",
+    "static/css/2.6d7c7915.chunk.css": "/react-robofriends-redux/static/css/2.6d7c7915.chunk.css",
+    "static/js/2.8df6e7d1.chunk.js": "/react-robofriends-redux/static/js/2.8df6e7d1.chunk.js",
+    "static/js/2.8df6e7d1.chunk.js.map": "/react-robofriends-redux/static/js/2.8df6e7d1.chunk.js.map",
     "index.html": "/react-robofriends-redux/index.html",
-    "precache-manifest.831e45c23d5298d25a3df3553b50ed19.js": "/react-robofriends-redux/precache-manifest.831e45c23d5298d25a3df3553b50ed19.js",
     "service-worker.js": "/react-robofriends-redux/service-worker.js",
-    "static/css/2.3b2cfc2e.chunk.css.map": "/react-robofriends-redux/static/css/2.3b2cfc2e.chunk.css.map",
-    "static/css/main.a6a6a69e.chunk.css.map": "/react-robofriends-redux/static/css/main.a6a6a69e.chunk.css.map",
-    "static/js/2.d9c99294.chunk.js.LICENSE.txt": "/react-robofriends-redux/static/js/2.d9c99294.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/react-robofriends-redux/static/media/SEGA.12a3db8b.woff"
+    "service-worker.js.map": "/react-robofriends-redux/service-worker.js.map",
+    "static/css/2.6d7c7915.chunk.css.map": "/react-robofriends-redux/static/css/2.6d7c7915.chunk.css.map",
+    "static/css/main.3356fdd3.chunk.css.map": "/react-robofriends-redux/static/css/main.3356fdd3.chunk.css.map",
+    "static/js/2.8df6e7d1.chunk.js.LICENSE.txt": "/react-robofriends-redux/static/js/2.8df6e7d1.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/react-robofriends-redux/static/media/SEGA.47b4bfa9.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.fa872842.js",
-    "static/css/2.3b2cfc2e.chunk.css",
-    "static/js/2.d9c99294.chunk.js",
-    "static/css/main.a6a6a69e.chunk.css",
-    "static/js/main.7d4302a7.chunk.js"
+    "static/js/runtime-main.97d3ecf4.js",
+    "static/css/2.6d7c7915.chunk.css",
+    "static/js/2.8df6e7d1.chunk.js",
+    "static/css/main.3356fdd3.chunk.css",
+    "static/js/main.2c7c8ad3.chunk.js"
   ]
 }
