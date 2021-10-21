@@ -11,7 +11,6 @@ import App from './containers/App';
 import {requestRobots, searchRobots} from './reducers'
 
 import './index.css';
-import ErrorBoundary from "./components/ErrorBoundry";
 
 
 //if (process.env.NODE_ENV === 'development') {
@@ -21,7 +20,7 @@ import ErrorBoundary from "./components/ErrorBoundry";
 const rootReducers = combineReducers({requestRobots, searchRobots})
 const useLogger = false;
 let store;
-if (useLogger){
+if (useLogger) {
     const logger = createLogger()
     store = createStore(rootReducers, applyMiddleware(thunkMiddleware, logger))
 } else {
@@ -36,9 +35,7 @@ if (useLogger){
 
 ReactDOM.render(
     <Provider store={store}>
-        <ErrorBoundary>
-            <App/>
-        </ErrorBoundary>
+        <App/>
     </Provider>,
     document.getElementById('root')
 );

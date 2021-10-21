@@ -3,7 +3,6 @@ import {useDispatch, useSelector} from 'react-redux';
 import {requestRobots, setSearchField} from '../actions';
 
 import CardList from '../components/CardList';
-import ErrorBoundary from '../components/ErrorBoundry';
 
 import './App.css';
 import Header from "./Header";
@@ -34,11 +33,7 @@ function App() {
             <div className='tc'>
                 <div style={{marginTop: '200px'}}>
                     {isPending ? <h1>Loading</h1> :
-
-                        <ErrorBoundary>
-                            <CardList robots={filteredRobots}/>
-                        </ErrorBoundary>
-
+                        <CardList robots={filteredRobots}/>
                     }
                 </div>
             </div>
