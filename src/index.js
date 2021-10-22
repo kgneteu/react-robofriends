@@ -4,7 +4,7 @@ import {applyMiddleware, combineReducers, createStore} from 'redux';
 import {Provider} from 'react-redux';
 import thunkMiddleware from 'redux-thunk';
 import {createLogger} from 'redux-logger';
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import 'tachyons';
 
 import App from './containers/App';
@@ -12,10 +12,6 @@ import {requestRobots, searchRobots} from './reducers'
 
 import './index.css';
 
-
-//if (process.env.NODE_ENV === 'development') {
-
-//}
 
 const rootReducers = combineReducers({requestRobots, searchRobots})
 const useLogger = false;
@@ -28,15 +24,15 @@ if (useLogger) {
 }
 
 
-//
-// const whyDidYouRender = require('@welldone-software/why-did-you-render');
-// whyDidYouRender(React );
-
-
 ReactDOM.render(
     <Provider store={store}>
         <App/>
     </Provider>,
     document.getElementById('root')
 );
-serviceWorker.unregister();
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://cra.link/PWA
+serviceWorkerRegistration.register();
+
