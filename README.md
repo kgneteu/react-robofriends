@@ -1,5 +1,5 @@
 # robofriends
-React + Redux
+Simple Progressive Web App. React + Redux
 
 To run the project:
 
