@@ -1,4 +1,6 @@
 import React from "react";
+import 'tachyons';
+
 import {useCallback, useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {requestRobots, setSearchField} from '../store/actions';
