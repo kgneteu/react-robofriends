@@ -12,3 +12,6 @@ To run the project:
 - Redux
 - TypeScript
 - Tachyons
+
+# Demo
+View demo [here](https://kgneteu.github.io/react-robofriends)

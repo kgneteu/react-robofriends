@@ -2,7 +2,7 @@
   "name": "robofriends",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kgneteu.github.io/react-robofriends-redux",
+  "homepage": "https://kgneteu.github.io/react-robofriends",
   "dependencies": {
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.6",
