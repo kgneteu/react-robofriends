@@ -1,7 +1,4 @@
-import React from "react";
-
-
-import {useCallback, useEffect} from 'react';
+import React, {useCallback, useEffect} from "react";
 import {useDispatch, useSelector} from 'react-redux';
 import {requestRobots, setSearchField} from '../store/actions';
 
@@ -10,10 +7,24 @@ import CardList from '../components/CardList';
 import './App.css';
 import Header from "./Header";
 
+interface Robot {
+    name: string,
+    email: string,
+}
+
+interface State {
+    searchRobots: {
+        searchField: string,
+    };
+    requestRobots: {
+        robots: Array<Robot>,
+        isPending: boolean
+    };
+}
 
 function App() {
-    const {searchField,} = useSelector(state => state.searchRobots)
-    const {robots, isPending} = useSelector(state => state.requestRobots)
+    const {searchField} = useSelector((state: State) => state.searchRobots)
+    const {robots, isPending} = useSelector((state: State) => state.requestRobots)
     const dispatch = useDispatch();
 
 
@@ -23,7 +34,7 @@ function App() {
     }, [dispatch])
 
 
-    const filteredRobots = robots.filter(robot => {
+    const filteredRobots = robots.filter((robot: Robot) => {
         return robot.name.toLowerCase().includes(searchField.toLowerCase());
     })
 
