@@ -4,20 +4,15 @@
   "private": true,
   "homepage": "https://kgneteu.github.io/react-robofriends-redux",
   "dependencies": {
-    "@types/jest": "^27.0.2",
-    "@types/node": "^16.11.6",
-    "@types/react": "^17.0.33",
-    "@types/react-dom": "^17.0.10",
     "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.5",
-    "react-scripts": "^0.9.5",
+    "react-scripts": "^4.0.3",
     "redux": "^4.1.1",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "tachyons": "^4.12.0",
-    "typescript": "^4.4.4",
     "workbox-background-sync": "^5.1.3",
     "workbox-broadcast-update": "^5.1.3",
     "workbox-cacheable-response": "^5.1.3",
@@ -37,6 +32,7 @@
     "local-build": "SET PUBLIC_URL=  && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "serve": "serve -s build"
@@ -44,7 +40,6 @@
   "browserslist": {
     "production": [
       ">0.2%",
-      "not dead",
       "not op_mini all"
     ],
     "development": [
@@ -54,7 +49,6 @@
     ]
   },
   "devDependencies": {
-    "express": "^4.17.1",
     "prop-types": "^15.7.2"
   }
 }
