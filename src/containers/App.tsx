@@ -5,7 +5,7 @@ import {requestRobots, setSearchField} from '../store/actions';
 import CardList from '../components/CardList';
 
 import './App.css';
-import Header from "./Header";
+import Header from "../components/header/Header";
 import {IRobot, IState} from "../store/reducers";
 
 

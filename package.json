@@ -3,6 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://kgneteu.github.io/react-robofriends",
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "**/*.{js,ts,jsx,tsx}",
+      "!**/*.d.ts",
+      "!**/service-worker.js",
+      "!**/reportWebVitals.js",
+      "!**/serviceWorkerRegistration.js"
+    ]
+  },
   "dependencies": {
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.6",
@@ -36,6 +48,7 @@
     "build": "react-scripts build",
     "local-build": "SET PUBLIC_URL=  && react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "test coverage": "npm test -- --coverage --watchAll",
     "eject": "react-scripts eject",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "predeploy": "npm run build",
@@ -55,6 +68,10 @@
   },
   "devDependencies": {
     "@types/redux-logger": "^3.0.9",
-    "prop-types": "^15.7.2"
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.2",
+    "prop-types": "^15.7.2",
+    "react-test-renderer": "^17.0.2"
   }
 }

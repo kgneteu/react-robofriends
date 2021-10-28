@@ -1,5 +1,5 @@
 import React, {SyntheticEvent, useEffect, useState} from "react";
-import SearchBox from "../components/SearchBox";
+import SearchBox from "../SearchBox";
 import * as PropTypes from "prop-types";
 
 type ComponentProps = {

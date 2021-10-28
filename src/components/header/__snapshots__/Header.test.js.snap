@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render Header component 1`] = `
+<header
+  style={
+    Object {
+      "boxShadow": "none",
+      "height": "200px",
+      "position": "fixed",
+      "textAlign": "center",
+      "top": 0,
+      "transition": "all 0.2s ease-out",
+      "width": "100%",
+      "zIndex": 100,
+    }
+  }
+>
+  <h1
+    className="f1 center"
+  >
+    RoboFriends
+  </h1>
+  <SearchBox
+    className="ml-auto"
+  />
+</header>
+`;
+
+exports[`Header should render Header component alt 1`] = `
+<header
+  style={
+    Object {
+      "boxShadow": "none",
+      "height": "200px",
+      "position": "fixed",
+      "textAlign": "center",
+      "top": 0,
+      "transition": "all 0.2s ease-out",
+      "width": "100%",
+      "zIndex": 100,
+    }
+  }
+>
+  <h1
+    className="f1 center"
+  >
+    RoboFriends
+  </h1>
+  <div
+    className="pa2"
+  >
+    <input
+      className="pa3 ba b--green bg-lightest-blue"
+      placeholder="search robots"
+      type="search"
+    />
+  </div>
+</header>
+`;
