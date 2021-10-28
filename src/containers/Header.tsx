@@ -1,8 +1,11 @@
-import React, {useEffect, useState} from "react";
+import React, {SyntheticEvent, useEffect, useState} from "react";
 import SearchBox from "../components/SearchBox";
 import * as PropTypes from "prop-types";
 
-const Header = props => {
+type ComponentProps = {
+    searchChange(event: SyntheticEvent): void
+}
+const Header = ({searchChange}: ComponentProps) => {
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -15,7 +18,7 @@ const Header = props => {
         }
     }, [])
 
-        // console.log('repaint')
+    // console.log('repaint')
     return (
         <header
             style={{
@@ -24,12 +27,12 @@ const Header = props => {
                 textAlign: "center",
                 width: "100%",
                 height: "200px",
-                zIndex: "100",
+                zIndex: 100,
                 boxShadow: scrolled ? "0 4px 4px rgba(0, 0, 0, 0.4)" : "none",
                 transition: "all 0.2s ease-out",
             }}>
             <h1 className="f1 center">RoboFriends</h1>
-            <SearchBox className={"ml-auto"} searchChange={props.searchChange}/>
+            <SearchBox className={"ml-auto"} searchChange={searchChange}/>
         </header>
     )
 };

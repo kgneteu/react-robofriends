@@ -6,25 +6,13 @@ import CardList from '../components/CardList';
 
 import './App.css';
 import Header from "./Header";
+import {IRobot, IState} from "../store/reducers";
 
-interface Robot {
-    name: string,
-    email: string,
-}
 
-interface State {
-    searchRobots: {
-        searchField: string,
-    };
-    requestRobots: {
-        robots: Array<Robot>,
-        isPending: boolean
-    };
-}
 
 function App() {
-    const {searchField} = useSelector((state: State) => state.searchRobots)
-    const {robots, isPending} = useSelector((state: State) => state.requestRobots)
+    const {searchField} = useSelector((state: IState) => state.searchRobots)
+    const {robots, isPending} = useSelector((state: IState) => state.requestRobots)
     const dispatch = useDispatch();
 
 
@@ -34,7 +22,7 @@ function App() {
     }, [dispatch])
 
 
-    const filteredRobots = robots.filter((robot: Robot) => {
+    const filteredRobots = robots.filter((robot: IRobot) => {
         return robot.name.toLowerCase().includes(searchField.toLowerCase());
     })
 
