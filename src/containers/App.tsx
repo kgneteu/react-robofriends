@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect} from "react";
+import React, {SyntheticEvent, useCallback, useEffect} from "react";
 import {useDispatch, useSelector} from 'react-redux';
 import {requestRobots, setSearchField} from '../store/actions';
 
@@ -9,8 +9,7 @@ import Header from "./Header";
 import {IRobot, IState} from "../store/reducers";
 
 
-
-function App() {
+function App(): JSX.Element {
     const {searchField} = useSelector((state: IState) => state.searchRobots)
     const {robots, isPending} = useSelector((state: IState) => state.requestRobots)
     const dispatch = useDispatch();
@@ -26,7 +25,9 @@ function App() {
         return robot.name.toLowerCase().includes(searchField.toLowerCase());
     })
 
-    const handleSearchChange = useCallback(event => dispatch(setSearchField(event.target.value)),
+    const handleSearchChange = useCallback(
+        (event: SyntheticEvent<HTMLInputElement>) =>
+            dispatch(setSearchField(event.currentTarget.value)),
         [dispatch]);
 
     return (

@@ -3,7 +3,7 @@ import SearchBox from "../components/SearchBox";
 import * as PropTypes from "prop-types";
 
 type ComponentProps = {
-    searchChange(event: SyntheticEvent): void
+    searchChange(event: SyntheticEvent<HTMLInputElement>): void
 }
 const Header = ({searchChange}: ComponentProps) => {
     const [scrolled, setScrolled] = useState(false);

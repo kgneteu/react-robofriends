@@ -7,7 +7,6 @@ import 'tachyons';
 import StoreProvider from "./store";
 
 
-
 ReactDOM.render(
     <StoreProvider>
         <App/>

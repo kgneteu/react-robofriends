@@ -1,7 +1,7 @@
 import React, {SyntheticEvent} from 'react';
 
 type ComponentProps = {
-    searchChange(event: SyntheticEvent): void;
+    searchChange(event: SyntheticEvent<HTMLInputElement>): void;
     className: string
 }
 const SearchBox = ({searchChange}: ComponentProps) => {

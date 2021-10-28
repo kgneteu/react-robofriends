@@ -6,8 +6,7 @@ import {IRobot} from "../store/reducers";
 type ComponentProps = {
     robots: Array<IRobot>
 }
-const CardList = (props: ComponentProps) => {
-    const robots = props.robots;
+const CardList = ({robots}: ComponentProps): JSX.Element => {
     return (
         <div>
             {
