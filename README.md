@@ -9,5 +9,6 @@ To run the project:
 
 # Technologies
 - React
-- Redux 
+- Redux
+- TypeScript
 - Tachyons
